@@ -26,8 +26,8 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 Following the wireframes provided, please expand on this front end project to build pages and components to display notifications.
 
-[http://tinyimg.io/i/4T8NmPp.png](Homepage wireframe)
-[http://tinyimg.io/i/Ix6RiwU.png](Notifications page wireframe)
+[http://tinyimg.io/i/4T8NmPp.png](http://tinyimg.io/i/4T8NmPp.png) Homepage
+[http://tinyimg.io/i/Ix6RiwU.png](http://tinyimg.io/i/Ix6RiwU.png) Notifications
 You will find image assets in the public/images folder.
 
 Please do the best you can to make the UI look like the wireframe images, but don't worry if your pixel measurements etc aren't perfect. We just want to see what you can do in the time you have.
