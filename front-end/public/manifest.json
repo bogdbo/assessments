@@ -1,6 +1,6 @@
 {
-  "short_name": "Doctorlink Notifications",
-  "name": "Doctorlink front end technical test",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
