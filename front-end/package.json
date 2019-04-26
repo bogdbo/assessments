@@ -1,0 +1,23 @@
+{
+  "name": "doctorlink-front-end",
+  "description": "Doctorlink front end technnical task for prospective candidates",
+  "author": "Laura Hanna-White",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-scripts": "2.1.8"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
