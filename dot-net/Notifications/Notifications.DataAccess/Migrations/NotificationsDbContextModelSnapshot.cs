@@ -19,14 +19,38 @@ namespace Notifications.DataAccess.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Notifications.DataAccess.NotificationEntity", b =>
+            modelBuilder.Entity("Notifications.Common.Models.Entities.NotificationEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("Body");
+
+                    b.Property<string>("EventType");
+
+                    b.Property<string>("Title");
+
+                    b.Property<string>("UserId");
+
                     b.HasKey("Id");
 
                     b.ToTable("Notifications");
+                });
+
+            modelBuilder.Entity("Notifications.Common.Models.NotificationTemplate", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("Body");
+
+                    b.Property<string>("EventType");
+
+                    b.Property<string>("Title");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Templates");
                 });
 #pragma warning restore 612, 618
         }

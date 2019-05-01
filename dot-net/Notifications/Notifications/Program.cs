@@ -10,15 +10,21 @@ using Microsoft.Extensions.Logging;
 
 namespace Notifications
 {
-    public class Program
+  public class Program
+  {
+    public static void Main(string[] args)
     {
-        public static void Main(string[] args)
-        {
-            CreateWebHostBuilder(args).Build().Run();
-        }
-
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+      CreateWebHostBuilder(args).Build().Run();
     }
+
+    public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+      WebHost.CreateDefaultBuilder(args)
+        .ConfigureAppConfiguration((context, builder) =>
+        {
+          var env = context.HostingEnvironment;
+          builder.AddJsonFile("appsettings.json")
+            .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true);
+        })
+        .UseStartup<Startup>();
+  }
 }
