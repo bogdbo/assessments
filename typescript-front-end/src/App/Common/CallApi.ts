@@ -1,5 +1,5 @@
-export function callApi<T>(url: string): Promise<T> {
-  return fetch(url)
+export function callApi<T>(url: string, opt?: RequestInit): Promise<T> {
+  return fetch(url, opt)
     .then(response => {
       if (!response.ok) {
         throw new Error(response.statusText)

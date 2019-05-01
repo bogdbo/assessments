@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components/macro';
+import {smallScreen} from '../Variables';
 
 interface Props {
   children?: React.ReactNode;
@@ -29,9 +30,13 @@ const ChildrenHost = styled.div`
   display: flex;
   flex-flow: column;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
   padding-bottom: 350px;
   text-align: center;
+  @media only screen and (max-width: ${smallScreen}px) {  
+    padding-bottom: 0;
+  }
 `;
 
 const Header = styled.div`

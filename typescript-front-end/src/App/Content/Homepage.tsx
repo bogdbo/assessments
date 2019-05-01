@@ -14,7 +14,7 @@ export const Homepage: React.FC = () => {
 };
 
 const StyledBanner = styled.img`
-  max-width: 600px;
+  max-width: 60%;
 `
 
 const ViewNotifications = styled(Link)`
@@ -23,16 +23,14 @@ const ViewNotifications = styled(Link)`
   text-decoration: none;
   max-width: 150px;
   background-color: #2716ad;
-  -moz-border-radius:28px;
-  -webkit-border-radius:28px;
-  border-radius:28px;
-  border:1px solid #3928bf;
-  display:inline-block;
-  cursor:pointer;
-  color:#ffffff;
-  font-size:17px;
-  padding:16px 31px;
-  text-shadow:0px 1px 0px #2f6627;
+  border-radius: 28px;
+  border: 1px solid #3928bf;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-shadow: 0px 1px 0px #2f6627;
     
   &:hover {
     background-color:#3928bf;

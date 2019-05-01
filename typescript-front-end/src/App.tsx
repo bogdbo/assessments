@@ -5,6 +5,7 @@ import {Logo} from "./App/AppLogo";
 import {Link, Route, Switch} from "react-router-dom";
 import {Homepage} from "./App/Content/Homepage";
 import {Notifications} from "./App/Content/Notifications/Notifications";
+import {smallScreen} from './App/Variables';
 
 class App extends React.Component<{}, {}> {
   render() {
@@ -30,6 +31,10 @@ const Host = styled.div`
   display: flex; 
   flex: 1 1 auto;
   height: 100%;
+  
+  @media only screen and (max-width: ${smallScreen}px) {
+    flex-direction: column;
+  }
 `;
 
 const StyledLink = styled(Link)`
@@ -37,6 +42,11 @@ const StyledLink = styled(Link)`
   padding: 10px 0;
   font-size: 24px;
   color: black;
+  
+  @media only screen and (max-width: ${smallScreen}px) {
+    margin-left: 16px;
+    font-size: 14px;
+  }
 `
 
 const StyledSidebar = styled(Sidebar)`
